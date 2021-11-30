@@ -1,0 +1,349 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Bedroom Villas
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&\amp;display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+  link(rel='stylesheet' href='../../css/style.css')
+// Navbar
+#navall
+  nav.navbar.navbar-light.bg-light
+    #drop.dropdown
+      button#dropdownMenuButton1.btn(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fa.fa-bars.bar
+      #menu.dropdown-menu(aria-labelledby='dropdownMenuButton')
+        td(scope='row')
+          a.dropdown-item(href='#') Home
+        td(scope='row')
+          a.dropdown-item(href='#') Bookmarked
+        td(scope='row')
+          a.dropdown-item(href='#') List Your Property
+        td(scope='row')
+          a.dropdown-item(href='#') About
+        td(scope='row')
+          a.dropdown-item(href='#') FAQ
+        td(scope='row')
+          a.dropdown-item(href='#') Blog
+    .col
+      a.navbar-brand(href='https://www.bedroomvillas.com/')
+        img(src='../../image/bedroomvillas-logo-new.png' alt='')
+    form.form-inline(autocomplete='off')
+      input#place.form-control.col.g-2.m-1(type='text' placeholder='Enter Your Destination')
+      input#checkin.form-control.col.g-2.m-1(type='text' placeholder='Check In')
+      input#checkout.form-control.col.g-2.m-1(type='text' placeholder='Check Out')
+      button.btn.btn-dark.m-1(type='button' data-toggle='modal' data-target='#guestModal') Guest
+      button.btn.btn-dark.m-1(type='button' data-toggle='modal' data-target='#priceModal') Price
+      button#search.btn.btn-dark.m-1(type='button' data-toggle='modal' data-target='#searchModal') Search
+  nav.navbar-2.navbar-light.bg-light.py-2.justify-content-between
+    .second-nav-left.col.ml-2
+      a(href='#')
+        b Arizona
+      a(href='#') Search Over 15 Properties
+    .second-nav-right.col
+      span.float-right
+        | Sort By &nbsp;&nbsp; 
+        button#dropdownMenuButton2.btn.btn-dark.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Most Popular
+        #menu.dropdown-menu(aria-labelledby='dropdownMenuButton')
+          a.dropdown-item(href='#') Most Popular
+          a.dropdown-item(href='#') Price:High to Low
+          a.dropdown-item(href='#') Price:Low to High
+          a.dropdown-item(href='#') Rating:High to Low
+          a.dropdown-item(href='#') Rating:Low to High
+// /.Navbar
+// Home Card
+#hmcard.hmcard
+  .row.row-cols-1.row-cols-md-3.g-4.m-1
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/super-8-by-wyndham-lewiston-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  683 reviews
+              br
+              |  Sleeps 85 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/holiday-inn-express-lewiston-an-ihg-hotel-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  583 reviews
+              br
+              |  Sleeps 17 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/super-8-by-wyndham-lewiston-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  683 reviews
+              br
+              |  Sleeps 85 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/inn-america-lewiston-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  583 reviews
+              br
+              |  Sleeps 17 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/cozy-pierce-house-forest-views-and-half-mi-to-rivers-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  683 reviews
+              br
+              |  Sleeps 85 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+    .col.py-3
+      .card.h-100
+        .container-img
+          img.card-img-top(src='../../image/holiday-inn-express-lewiston-an-ihg-hotel-0.jpg' alt='room view')
+          .card-img-overlay
+            .row.justify-content-end
+              button.btn.faded-grey.py-2.px-3.mr-4(type='button')
+                | More Photos 
+                span.badge.faded-grey
+                  i.fa.fa-angle-right
+            .pos-left
+              span.badge.faded-grey.py-2.px-3 From TK 9,181
+            .pos-right.py-2.px-3
+              i.fa.fa-heart
+        .card-body
+          h4.card-title The Nautical Beachfront Resort
+          p.card-text
+            div
+              span.fa.fa-star.color-danger.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star.checked
+              span.fa.fa-star
+              span.fa.fa-star
+              button.btn.btn-deeporange.float-right.px-4 View Details
+              |  583 reviews
+              br
+              |  Sleeps 17 
+              br
+              a(href='#') Arizona
+              |  &nbsp; &gt; &nbsp; 
+              a(href='#') Lake Havasu City
+              br
+            div
+              i.fa.fa-check
+              |  View &nbsp;&nbsp;&nbsp;
+              i.fa.fa-check
+              |  Child Friendly
+              span.bccode BC-6230277
+  // Map Show Button
+  .button-toggle
+    button#tg-map.tg-map
+      i.fa.fa-location-arrow
+  // weather
+  // Map Show Button
+// Map Prsentattion
+#map.map
+// Map Prsentattion
+#guestModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Enter Guest Number
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        .guest-radio
+          button#g-m.g-dot.m-2 -
+          span#g-c.g-dot.g-count.m-2 0
+          button#g-p.g-dot.m-2 +
+      .modal-footer
+        button.btn.darkorange(type='button' data-dismiss='modal') Apply
+#priceModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Price Range: &#x9F3;0 - &#x9F3;30000+ per night
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        .price-range-slider
+          p.range-value
+            input#amount(type='text' readonly='')
+          #slider-range.range-bar
+      .modal-footer
+        button.btn.darkorange(type='button' data-dismiss='modal') Apply
+#searchModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Confirm given Details
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      .modal-body
+        p#popup.search-radio
+      .modal-footer
+        button.btn.darkorange(type='button' data-dismiss='modal') Apply
+// /.Home Card
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+// <script src="js/query.js"></script>
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyArTUpPxK58U3xCnOuoFYGMtLfce4S0Ok4&libraries=places&callback=myMap')
+script(src='https://code.jquery.com/jquery-3.6.0.js' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' crossorigin='anonymous')
+script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js' integrity='sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=' crossorigin='anonymous')
+script(src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous')
+script(src='../../js/script.js')
+

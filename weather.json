@@ -1,0 +1,42 @@
+[
+  {
+    "country": "bangladesh",
+    "city": "khulna",
+    "min_c": "16.60 ℃",
+    "max_c": "30.50 ℃",
+    "avg_c": "22.67 ℃",
+    "min_f": "61.90 ℉",
+    "max_f": "86.90 ℉",
+    "avg_f": "72.77 ℉"
+  },
+  {
+    "country": "bangladesh",
+    "city": "dhaka",
+    "min_c": "18.67 ℃",
+    "max_c": "32.33 ℃",
+    "avg_c": "24.57 ℃",
+    "min_f": "65.63 ℉",
+    "max_f": "90.20 ℉",
+    "avg_f": "76.27 ℉"
+  },
+  {
+    "country": "germany",
+    "city": "berlin",
+    "min_c": "1.07 ℃",
+    "max_c": "6.10 ℃",
+    "avg_c": "3.93 ℃",
+    "min_f": "33.93 ℉",
+    "max_f": "43.00 ℉",
+    "avg_f": "39.07 ℉"
+  },
+  {
+    "country": "germany",
+    "city": "kleve",
+    "min_c": "1.50 ℃",
+    "max_c": "6.33 ℃",
+    "avg_c": "4.13 ℃",
+    "min_f": "34.70 ℉",
+    "max_f": "43.40 ℉",
+    "avg_f": "39.43 ℉"
+  }
+]

@@ -1,0 +1,236 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bar{
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+}
+
+.bar:hover{
+    color: rgb(45, 45, 129);
+}
+
+
+.navbar{
+    top: 0;
+    background-color:white;
+    color: black;
+    z-index: 2;
+}
+
+
+.navbar-2{
+    top: 0;
+    background-color:red;
+    color: black; 
+    z-index: 1;
+    display: flex;
+    font-size: 18px;
+}
+
+.second-nav-left a{
+    color: orange;
+
+}
+
+.second-nav-left a:hover{
+    color: darkorange;
+    text-decoration: none;
+    
+}
+
+@media (min-width:780px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+
+@media (max-width:780px){
+    .form-inline{
+        background-color: black; 
+    }
+
+    .second-nav-left{
+        display: none;
+    }
+
+    .dropdown-menu{
+        width: 100vw;
+    }
+}
+
+.dropdown-menu{
+    background-color: darkorange;
+}
+/*guest*/
+.guest-radio{
+    text-align: center;
+}
+.g-dot {
+    display:inline-block;
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: darkorange;
+    box-shadow: 0 0 3px orange;
+    font-size:20px;
+    font-weight:bold;
+  }
+
+.g-count{
+    background-color: white;
+    width:80px;
+    height:80px;
+    color: black;
+    border-radius: 50%;
+}
+/*guest*/
+/*price range*/
+
+.price-range-slider {
+    width: 100%;
+    float: left;
+    padding: 10px 20px;
+  }
+  .price-range-slider .range-value {
+    margin: 0;
+  }
+  .price-range-slider .range-value input {
+    width: 100%;
+    background: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 20px 0 20px 0;
+  }
+  .price-range-slider .range-bar {
+    border: none;
+    background: #000;
+    height: 3px;
+    width: 96%;
+    margin-left: 8px;
+  }
+  .price-range-slider .range-bar .ui-slider-range {
+    background: darkorange;
+  }
+  .price-range-slider .range-bar .ui-slider-handle {
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    border: 2px solid darkorange;
+    height: 17px;
+    width: 17px;
+    top: -0.52em;
+    cursor: pointer;
+  }
+  .price-range-slider .range-bar .ui-slider-handle + span {
+    background: darkorange;
+  }
+  /*price range*/
+.search-radio{
+    text-align: justify;
+}
+.form-control{
+    outline: 1px solid black;
+}
+
+.card-title{
+    font-weight: 900;
+}
+
+.checked{
+    color: orange;
+}
+
+.darkorange{
+    background-color:darkorange;
+}
+.faded-grey{
+    background-color:white;
+    color: black;
+    opacity: 80%;
+}
+
+.faded-grey:hover{
+    background-color: aliceblue;
+}
+
+.container-img{
+    position: relative;
+}
+.pos-left {
+    position: absolute;
+    bottom: 15px;
+    left: 16px;
+    font-size: 30px;
+}
+.pos-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 30px;
+    color:white;
+}
+
+.pos-right:hover{
+    color:red;
+}
+
+.absolute {
+    position: absolute;
+    width: 50%;
+    bottom: 20px;
+} 
+
+.btn-deeporange{
+    background-color: darkorange;
+    color: white;
+    font-size: 18px;
+}
+
+.bccode{
+    float:right;
+}
+.hmcard{
+    position: relative;
+}
+
+.button-toggle{
+    text-align: center;
+}
+
+/*map*/
+.map{
+    height: 100vh; 
+    width: 100vw; 
+    display: none; 
+}
+.tg-map{
+    background-color: darkorange;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid orange;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight:bolder;
+    z-index: 1000;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    box-shadow: 0 0 5px orange;
+}
+.tg-map:hover{
+    background-color: red;
+}
