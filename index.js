@@ -12,7 +12,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 const limiter = rateLimit({
   windowMs: 30 * 1000,
-  max: 1, // limit each IP to 1 requests per windowMs
+  max: 2, // limit each IP to 1 requests per windowMs
   message: "403 HTTP Forbidden server responses",
 });
 
