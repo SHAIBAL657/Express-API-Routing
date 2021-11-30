@@ -25,11 +25,11 @@ Colorado weather API Data.
 
 ~ http://localhost:3000 will route to index with out weather container.
 
-~ http://localhost:3000/all will through a alert box that <b>404 PAGE NOT FOUND!</b>
+~ http://localhost:3000/all will throw alert box that <b>404 PAGE NOT FOUND!</b>
 
 ~ Rate limit to hit the URL above to 1 in 30 seconds, if anyone hit more than this, we will display <b>403 HTTP Forbidden server responses</b>.
 
-~ If no weather data found, then through alert box that, the location is incorrect.
+~ If no weather data found, then throw alert box that, the location is incorrect.
 
 ~ When weather data for a location fetch for first time, it stores that into a JSON file, so next time if call that JSON file skipping the API call to RapidAPI.
 
@@ -45,5 +45,5 @@ Colorado weather API Data.
 <a style="text-decoration:none;">http://localhost:3000/all/country_name/invalid_input</a> --- 404 LOCATION NOT FOUND!<br>
 <a style="text-decoration:none;">http://localhost:3000/all/country_name/city_name</a> --- SHOW WEATHER DATA<br>
 
-First input after "........./all/" should be country or else through 04 LOCATION NOT FOUND!
+First input after "........./all/" should be country or else throw 04 LOCATION NOT FOUND!
 
